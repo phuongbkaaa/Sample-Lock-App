@@ -1,0 +1,50 @@
+<?xml version="1.1" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.utility.digitaldetox">
+
+    <uses-sdk
+        android:minSdkVersion="23"
+        android:targetSdkVersion="28" />
+
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions"
+        tools:remove="android:maxSdkVersion" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <application
+        android:allowBackup="true"
+        android:background="@color/colorAccent"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <service android:name="com.utility.digitaldetox.StartPlanService" />
+        <service android:name="com.utility.digitaldetox.OpenSettingsService" />
+
+        <activity android:name="com.utility.digitaldetox.createPlan" />
+        <activity android:name="com.utility.digitaldetox.timePickerActivity">
+        </activity>
+        <activity
+            android:name="com.utility.digitaldetox.absolutelyNeed"
+            android:parentActivityName="com.utility.digitaldetox.timePickerActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="zz.zolboo.com.utility.digitaldetox.timePicker" />
+        </activity>
+        <activity android:name="com.utility.digitaldetox.AllAppsList" />
+        <activity android:name="com.utility.digitaldetox.SureToStop" />
+        <activity android:name="com.utility.digitaldetox.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
