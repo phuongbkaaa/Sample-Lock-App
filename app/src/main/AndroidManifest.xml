@@ -12,6 +12,7 @@
         tools:ignore="ProtectedPermissions"
         tools:remove="android:maxSdkVersion" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
     <application
@@ -34,7 +35,7 @@
             android:parentActivityName="com.utility.digitaldetox.timePickerActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="zz.zolboo.com.utility.digitaldetox.timePicker" />
+                android:value="com.utility.digitaldetox.timePickerActivity" />
         </activity>
         <activity android:name="com.utility.digitaldetox.AllAppsList" />
         <activity android:name="com.utility.digitaldetox.SureToStop" />

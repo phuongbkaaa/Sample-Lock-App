@@ -29,6 +29,8 @@ import static com.utility.digitaldetox.StartPlanService.CHANNEL_ID;
  */
 public class OpenSettingsService extends Service {
     CountDownTimer checkIfPermissionGranted;
+    public static String str_receiver = "com.nephi.getoffyourphone.receiver";
+
     private int offTimeNotificationID= 1;
     @Nullable
     @Override

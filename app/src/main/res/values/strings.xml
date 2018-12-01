@@ -38,4 +38,6 @@
     <string name="unplugged">You Unplugged Today For:</string>
     <string name="descr">Total time saved using this app:</string>
     <string name="dontForget">Please don\'t forget to pin this application so you don\'t accidentally stop the digital detox</string>
+    <string name="time_left2">Time left to unlock:&#160;</string>
+
 </resources>
